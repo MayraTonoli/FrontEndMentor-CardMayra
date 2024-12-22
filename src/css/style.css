@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+}
+
+hr{
+    width: 100%;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cartao {
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 380px;
+    border-radius: 5%
+}
+
+.cartao .imagem-background {
+    background-image: url("bg-pattern-card.svg");
+    max-width: 350px;
+    position:fixed;
+       
+}
+
+.cartao .informacoes-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding: 30px;
+    gap:15px
+    
+}
+.cartao .informacoes-perfil img {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    border-radius: 50%;
+    position:relative;
+   
+}
+
+.cartao .dados-perfil{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+    gap:10px;
+    margin-top: 15px;
+}
+
+.dados-perfil .info .profissao ,
+.dados-perfil .info .nivel, .dados-perfil .info .curso,
+.cartao .informacoes-perfil p {
+    font-weight: 700;
+}
+
+.cartao .informacoes-perfil .idade, .cartao .informacoes-perfil .cidade,
+.dados-perfil .info .profissao-tipo, 
+.dados-perfil .info .nivel-tipo, 
+.dados-perfil .info .curso-tipo{
+    color: var(--text-color);
+}
